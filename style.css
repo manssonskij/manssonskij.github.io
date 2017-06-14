@@ -1,0 +1,87 @@
+body {
+	background-color: #white;
+	background-color: #F2F1EF;
+	text-align: center;
+	/*	font-family: 'Lato', sans-serif;*/
+	font-family: 'Inconsolata', monospace;
+
+
+}
+
+.codeblock {
+	text-align: left;
+}
+
+.color-1 {
+	/*margin-top: 80px;*/
+	/*background-color: #addd8e;*/
+}
+.color-2 {
+	color: white;
+	color: #F2F1EF;
+	background: linear-gradient(#E74C3C,#C0392B);
+	/*background-color: #31a354;*/
+}
+.color-3 {
+	color: white;
+	color: #F2F1EF;
+	background-color: #34495E;
+	/*font-family: 'Lato', sans-serif;
+	/*#C0392B*/
+	font-family: 'Inconsolata', monospace;
+
+}
+.color-end {
+	color: white;
+	background-color: #2C3E50;
+	background: linear-gradient(#34495E,#2C3E50);
+	background: radial-gradient(circle, #31a354,#addd8e);
+	/*#C0392B*/
+}
+.container-fluid {
+
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#homesection{
+		height: 100%;
+}
+
+.borderless td, .borderless th {
+    border: none;
+    border: none !important;
+}
+
+.code {
+	background-color: #34495E;
+}
+
+.container-fluid h1 {
+	/* font-family: 'Raleway', sans-serif; */
+		font-family: 'Pacifico', cursive;
+	/* letter-spacing: 4px; */
+}
+
+body, html {
+	height: 100%;
+}
+
+/* Standard parallax effect @ W3Schools*/
+.parallax {
+	/* The image used */
+	/* background-image: url("trianglify-background2.png"); */
+
+	background-image: url("greypattern.svg");
+	/* Full height */
+	height: 100%;
+	opacity: 0.65;
+
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	background-repeat: repeat;
+}
