@@ -44,12 +44,12 @@ body {
 	padding-bottom: 100px;
 }
 #homesection{
-		height: 100%;
+	height: 100%;
 }
 
 .borderless td, .borderless th {
-    border: none;
-    border: none !important;
+	border: none;
+	border: none !important;
 }
 
 .code {
@@ -58,7 +58,7 @@ body {
 
 .container-fluid h1 {
 	/* font-family: 'Raleway', sans-serif; */
-		font-family: 'Pacifico', cursive;
+	font-family: 'Pacifico', cursive;
 	/* letter-spacing: 4px; */
 }
 
@@ -84,4 +84,20 @@ body, html {
 	background-size: cover;
 
 	background-repeat: repeat;
+}
+
+#grad {
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+}
+
+h1 {
+	background: -webkit-linear-gradient(90deg, #8e44ad 10%, #c0392b 25%, #d35400 50%, #f39c12 75%, #f1c40f 100%); /* For Safari 5.1 to 6.0 */
+	background: linear-gradient(300deg, #8e44ad 20%, #c0392b 35%, #d35400 50%, #f39c12 75%, #f1c40f 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 120px;
 }
