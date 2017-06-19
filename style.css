@@ -1,11 +1,17 @@
+/* Experimental and way to messy */
+
 body {
 	background-color: #white;
 	background-color: #F2F1EF;
 	text-align: center;
 	/*	font-family: 'Lato', sans-serif;*/
 	font-family: 'Inconsolata', monospace;
-
-
+}
+body, html {
+	/*height: 100%;*/
+}
+.homesection {
+	height: 100%;
 }
 
 .codeblock {
@@ -13,21 +19,19 @@ body {
 }
 
 .color-1 {
-	/*margin-top: 80px;*/
-	/*background-color: #addd8e;*/
+	height: 100%;
+
 }
 .color-2 {
 	color: white;
 	color: #F2F1EF;
 	background: linear-gradient(#E74C3C,#C0392B);
-	/*background-color: #31a354;*/
+
 }
 .color-3 {
 	color: white;
 	color: #F2F1EF;
 	background-color: #34495E;
-	/*font-family: 'Lato', sans-serif;
-	/*#C0392B*/
 	font-family: 'Inconsolata', monospace;
 
 }
@@ -36,13 +40,12 @@ body {
 	background-color: #2C3E50;
 	background: linear-gradient(#34495E,#2C3E50);
 	background: radial-gradient(circle, #31a354,#addd8e);
-	/*#C0392B*/
 }
 .container-fluid {
-
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
+
 #homesection{
 	height: 100%;
 }
@@ -56,34 +59,19 @@ body {
 	background-color: #34495E;
 }
 
-.container-fluid h1 {
-	/* font-family: 'Raleway', sans-serif; */
-	font-family: 'Pacifico', cursive;
-	/* letter-spacing: 4px; */
-}
-
-body, html {
-	height: 100%;
-}
-
 /* Standard parallax effect @ W3Schools*/
 .parallax {
-	/* The image used */
-	/* background-image: url("trianglify-background2.png"); */
 
 	background-image: url("greypattern.svg");
 	/* Full height */
 	height: 100%;
 	opacity: 0.65;
 
-
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-	background-repeat: repeat;
 }
 
 #grad {
@@ -95,9 +83,85 @@ body, html {
 }
 
 h1 {
+
+	font-family: 'Pacifico', cursive;
+	font-family: 'Neucha', cursive;
+	font-family: 'Lobster', cursive;
 	background: -webkit-linear-gradient(90deg, #8e44ad 10%, #c0392b 25%, #d35400 50%, #f39c12 75%, #f1c40f 100%); /* For Safari 5.1 to 6.0 */
 	background: linear-gradient(300deg, #8e44ad 20%, #c0392b 35%, #d35400 50%, #f39c12 75%, #f1c40f 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	line-height: 120px;
+	-webkit-transition: all 2s ease;
+	transition: all 2s ease;
+	opacity:0.8;
+	transform: rotateZ(-5deg);
+	-webkit-text-stroke-width: 0px;
+	-webkit-text-stroke-color: white;
+
 }
+
+.wrapper {
+	margin: 0 auto;
+	align-content: center;
+	text-align: center;
+	filter: drop-shadow( 5px 5px 5px #34495e );
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	paint-order: stroke;
+	stroke: #ffffff;
+	stroke-width: 5px;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+}
+
+svg {
+	max-height: 400px;
+	margin: 0 auto; /* poor attempt at centering */
+	display: block;
+	padding: 10px;
+}
+.mainlogo {
+	max-height: 400px;
+	padding: 10px;
+}
+.sectiontitle {
+	max-height: 120px;
+	max-width: 300px;
+	margin-bottom: 2em;
+}
+.skilltag {
+	font-weight: bold;
+	paint-order: stroke;
+	stroke: #ffffff;
+	stroke-width: 5px;
+	max-height: 40px;
+}
+
+
+h1:after {
+
+	z-index: -1;
+
+	background-image:
+	linear-gradient(
+		45deg,
+		transparent 45%,
+		hsla(48,20%,90%,1) 45%,
+		hsla(48,20%,90%,1) 55%,
+		transparent 0
+		);
+		background-size: .05em .05em;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-shadow: 0 1px 0 #CCC,
+		0 2px 0 #CCC,
+		0 3px 0 #CCC,
+		0 4px 0 #CCC,
+		0 5px 0 #CCC,
+		0 6px 0 transparent,
+		0 7px 0 transparent,
+		0 8px 0 transparent,
+		0 9px 0 transparent,
+		0 10px 10px rgba(0, 0, 0, .4);
+	}

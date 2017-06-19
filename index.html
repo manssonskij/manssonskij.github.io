@@ -15,23 +15,12 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme --><!--
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<!-- Google WebFonts -->
-	<!--<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700' rel='stylesheet' type='text/css'>-->
-	<!--<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">-->
-	<!--<link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato:400,700" rel="stylesheet">-->
-	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-
 	<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 	<link type="text/css" rel="stylesheet" href="flat-ui.css">
 
@@ -48,7 +37,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">#manssonskij</a>
+				<a class="navbar-brand" href="#">#manssonskij!</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
@@ -68,78 +57,191 @@
 		<p>empty space</p>
 	</div>
 
-	<div class="container-fluid color-1" id="homesection">
+	<div class="container-fluid color-1 homesection" id="homesection">
 		<!--<h1># манссонский</h1>-->
-		<h1 id="grad1">#manssonskij</h1>
+
+		<div class="container wrapper"  text-align="center">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="mainlogo" align="center" viewBox="0 0 600 200" preserveAspectRatio="xMinYMax meet">
+			<style>
+			/* fade inspired by https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/*/
+			svg * {
+				transition: fill 1s ease-out, opacity 1s ease-out;
+			}
+			@media all and (max-width: 400px) {
+				#primary {
+					opacity: 1;
+				}
+			}
+			@media all and (max-width: 400px) {
+				#secondary{
+					opacity: 0;
+				}
+			}
+			</style>
+			<defs>
+				<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="10%" style="stop-color:#8e44ad;stop-opacity:1" />
+					<stop offset="20%" style="stop-color:#c0392b;stop-opacity:1" />
+					<stop offset="100%" style="stop-color:#f1c40f;stop-opacity:1" />
+				</linearGradient>
+				<radialGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="20%" style="stop-color:#c0392b;stop-opacity:1" />
+					<stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+				</radialGradient>
+				<linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="20%" style="stop-color:#c0392b;stop-opacity:1" />
+					<stop offset="100%" style="stop-color:#f1c40f;stop-opacity:1" />
+				</linearGradient>
+				<linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="10%" style="stop-color:#8e44ad;stop-opacity:1" />
+					<stop offset="20%" style="stop-color:#c0392b;stop-opacity:1" />
+				</linearGradient>
+			</defs>
+			<g id="primary">
+				<circle id="bgcircle" cx="300" cy="90" r="75" stroke="white" stroke-width="20" fill="url(#grad2)"/>
+				<text id="title" text-anchor="middle" fill="url(#grad1)" font-size="85" stroke-width="10" transform="rotate(-5)" font-family="Lobster" x="300" y="140">#manssonskij!</text>
+			</g><g id="secondary">
+				<text id="elgrande" text-anchor="middle" fill="url(#grad1)" font-size="25" transform="rotate(-5)" font-family="Lobster" x="330" y="80">el grande</text>
+				<text id="subtitle" text-anchor="middle" fill="url(#grad1)" font-size="30" transform="rotate(-5)" font-family="Lobster" x="300" y="160">notorius supervillain</text>
+				<text id="version" text-anchor="middle" fill="#c0392b" font-size="12"  font-family="Monospace" x="420" y="170">1.0.0-SNAPSHOT</text>
+			</g>#manssonskij!
+		</svg></div>
+
+		<!--<h1 id="grad1">#manssonskij!</h1>-->
 		<p>remarkably somehow online..</p>
 		<p>junior <b>fullstack</b> software developer with an interest in <b>devops</b> and <b>linux</b></p>
-		<!--<p>
-		<a class="btn btn-lg btn-primary" href="https://github.com/manssonskij" role="button"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-		github</a>
-		<a class="btn btn-lg btn-primary" href="https://www.linkedin.com/in/antonmansson" role="button"><span class="glyphicon glyphicon-linkedin" aria-hidden="true"></span> linkedin</a>
-	</p>-->
-</div>
 
-
-<div class="container-fluid color-3" id="aboutsection">
-	<h1><!--<small>?</small>-->:$whoami</h1>
-	<p>AFK known as..</p>
-	<p><!--<i class="material-icons">fingerprint</i>--> Anton Månsson,</p>
-	<p>a <b>software developer</b> motivated by:</p>
-	<p>inspiration // work // challenges</p>
-
-	<p>previously a</p>
-	<p><a href="http://nackademin.se/utbildningar/programutvecklare-java/">java student</a> @ <a href="http://nackademin.se">nackademin</a></p>
-
-</div>
-
-<!-- skill block code -->
-<div class="container-fluid color-1" id="codesection">
-	<h1><!--<small>//</small>--> >_code </h1>
-
-
-	<div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
-
-		<p>familiar with..</p>
-
-		<p><small>Backend:</small> Java 8, Java EE, MySQL, Spring Framework, Node.js</p>
-
-		<p><small>Frontend:</small> HTML5, CSS, JavaScript, AngularJS, React</p>
-
-		<p><small>Mobile:</small> Android</p>
-
-		<p><small>Devops:</small> Jenkins, Docker, Vagrant</p>
-
-		<p><small>Various:</small> JBoss EAP, JBoss BPM</p>
-
-		<p>less or more occasionally available on:</p>
-		<a class="btn btn-lg btn-primary" href="https://github.com/manssonskij" role="button"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-			github</a>
+		<div class="container wrapper" text-align="center">
+			<svg class="sectiontitle " align="center" viewBox="0 0 300 100" preserveAspectRatio="xMinYMax meet">
+				<!--<ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />-->
+				<text text-anchor="middle" fill="url(#grad3)" font-size="65" transform="rotate(-5)" font-family="Lobster" x="150" y="90">for hire!</text>
+				For Hire!
+			</svg>
 		</div>
 	</div>
 
 
+	<div class="container-fluid color-3" id="aboutsection">
+
+		<div class="container wrapper" text-align="center">
+			<svg class="sectiontitle" align="center" viewBox="0 0 300 100" preserveAspectRatio="xMinYMax meet">
+				<text text-anchor="middle" fill="url(#grad1)" font-size="65" transform="rotate(-5)" font-family="Lobster" x="150" y="90">:$whoami</text>
+				:$whoami
+			</svg>
+		</div>
+
+		<!--<h1>:$whoami</h1>-->
+		<p>AFK known as..</p>
+		<div class="container wrapper" text-align="center">
+			<svg class="sectiontitle" align="center" viewBox="0 0 300 60" preserveAspectRatio="xMinYMax meet">
+
+				<text text-anchor="middle" fill="url(#grad1)" font-size="34"font-family="Lobster" x="150" y="40">Anton Månsson</text>
+				Anton Månsson
+			</svg>
+		</div>
+
+		<!--<p><i class="material-icons">fingerprint</i> Anton Månsson,</p>-->
+		<p>a <b>software developer</b> motivated by:</p>
+		<!--<p>inspiration // work // challenges</p>-->
+		<div class="container wrapper" text-align="center">
+			<svg class="sectiontitle" align="center" viewBox="0 0 300 60" preserveAspectRatio="xMinYMax meet">
+				<text text-anchor="middle" fill="url(#grad2)" font-size="24"font-family="Lobster" x="150" y="40">inspiration / / work / / challenges</text>
+				inspiration // work // challenges
+			</svg>
+		</div>
+
+		<p>previously a</p>
+		<p><a href="http://nackademin.se/utbildningar/programutvecklare-java/">java student</a> @ <a href="http://nackademin.se">nackademin</a></p>
+
+	</div>
+
+	<!-- skill block code -->
+	<div class="container-fluid color-1" id="codesection">
+
+		<div class="wrapper container"  text-align="center">
+			<svg class="sectiontitle" align="center" viewBox="0 0 300 100" preserveAspectRatio="xMinYMax meet">
+				<text text-anchor="middle" fill="url(#grad1)" font-size="65" transform="rotate(-5)" font-family="Lobster" x="150" y="100">>_code</text>
+				>_code
+			</svg>
+		</div>
+		<!--<h1>>_code </h1>-->
 
 
-	<!-- block code -->
-	<div class="container-fluid color-3" id="contactsection">
-		<h1><!--<small>@</small>--> @contact</h1>
+		<div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+
+			<p>familiar with..</p>
+
+			<svg class="skilltag" align="center" viewBox="0 0 100 20">
+				<text text-anchor="middle" fill="url(#grad2)" font-size="20" font-family="Lobster" x="50" y="10">Backend:</text>
+				Backend:
+			</svg>
+
+			<p><!--<small>Backend:</small>--> Java 8, Java EE, MySQL, Spring Framework, Node.js</p>
+
+			<svg class="skilltag" align="center" viewBox="0 0 100 20">
+				<text text-anchor="middle" fill="url(#grad3)" font-size="20" font-family="Lobster" x="50" y="10">Frontend:</text>
+				Backend:
+			</svg>
+			<p><!--<small>Frontend:</small>--> HTML5, CSS, JavaScript, AngularJS, React</p>
+
+			<svg class="skilltag" align="center" viewBox="0 0 100 20">
+				<text text-anchor="middle" fill="url(#grad4)" font-size="20" font-family="Lobster" x="50" y="10">Mobile:</text>
+				Mobile:
+			</svg>
+			<p><!--<small>Mobile:</small>--> Android</p>
+
+			<svg class="skilltag" align="center" viewBox="0 0 100 20">
+				<text text-anchor="middle" fill="url(#grad1)" font-size="20" font-family="Lobster" x="50" y="10">DevOps:</text>
+				DevOps:
+			</svg>
+			<p><!--<small>Devops:</small>--> Jenkins, Docker, Vagrant</p>
+
+			<svg class="skilltag" align="center" viewBox="0 0 100 20">
+				<text text-anchor="middle" fill="url(#grad2)" font-size="20" font-family="Lobster" x="50" y="10">Various:</text>
+				Various:
+			</svg>
+			<p><!--<small>Various:</small>--> JBoss EAP, JBoss BPM</p>
+
+			<p>less or more occasionally available on:</p>
+			<a class="btn btn-lg btn-primary" href="https://github.com/manssonskij" role="button"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+				github</a>
+
+				<p><kbd>cat ~/workspace > /dev/null</kbd></p>
+			</div>
+		</div>
+
+		<!-- block code -->
+		<div class="container-fluid color-3" id="contactsection">
+			<div class="wrapper"  text-align="center">
+				<svg class="sectiontitle" align="center" viewBox="0 0 300 100" preserveAspectRatio="xMinYMax meet">
+					<text text-anchor="middle" fill="url(#grad1)" font-size="65" transform="rotate(-5)" font-family="Lobster" x="150" y="90">@contact</text>
+					Sorry, your browser does not support inline SVG.
+				</svg>
+			</div>
+			<!--<h1>@contact</h1>-->
 			<div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
 
-			throw away a mail to..
-			<p><a href="mailto:tor.mansson@gmail.com">tor.mansson@gmail.com</a></p>
-			<p>or visit..</p>
-			<a class="btn btn-lg btn-primary" href="https://www.linkedin.com/in/antonmansson" role="button"><span class="glyphicon glyphicon-linkedin" aria-hidden="true"></span> linkedin</a>
-
-
-
+				throw away a mail to..
+				<p><a href="mailto:tor.mansson@gmail.com">tor.mansson@gmail.com</a></p>
+				<p>or visit..</p>
+				<a class="btn btn-lg btn-primary" href="https://www.linkedin.com/in/antonmansson" role="button"><span class="glyphicon glyphicon-linkedin" aria-hidden="true"></span>linkedin</a>
+			</div>
 		</div>
-	</div>
 
-	<!-- the end code -->
-	<div class="container-fluid color-1" id="theend">
-		<h1 id="endtext"> /&gt;the end </h1>
-		<kbd>:wq!</kbd>
+		<!-- the end code -->
+		<div class="container-fluid color-1" id="theend">
+
+			<div class="wrapper"  text-align="center">
+				<svg class="sectiontitle" align="center" viewBox="0 0 300 100" preserveAspectRatio="xMinYMax meet">
+					<text text-anchor="middle" fill="url(#grad1)" font-size="65" transform="rotate(-5)" font-family="Lobster" x="150" y="100">/&gt;the end</text>
+					/&gt;the end
+				</svg>
+			</div>
+			<p>Well then, that was about it for now..</p>
+			<!--<h1> >_code </h1>-->
+			<!--<h1 id="endtext">/&gt;the end </h1>-->
+			<kbd>:wq!</kbd>
+			<p><small>No bits were harmed during development.</small></p>
 		</div>
 
 		<!-- Scroll spy script code, connects scrolling with navbar highlights -->
@@ -149,20 +251,5 @@
 		});
 		</script>
 
-		<!--
-		<script type="text/javascript">
-		$("#theend").scroll(function(){
-
-		$("#endtext").fadeIn("slow");
-	});
-</script>-->
-
-<!-- Scroll reveal script code, reveal objects upon scroll -->
-<!--<script type="text/javascript">
-window.sr = ScrollReveal();
-sr.reveal('p', { duration: 2000, delay: 500,reset: true, mobile: false },50);
-sr.reveal('#endtext', { duration: 2000, delay: 500,reset: true, mobile: false });
-sr.reveal('#homesection', { duration: 1000, delay: 500,reset: true, mobile: false });
-</script>-->
-</body>
-</html>
+	</body>
+	</html>
